@@ -1,5 +1,5 @@
 import SwiftUI
-//#-learning-task(favoritesView)
+
 
 struct StatusView: View {
     @State var yourName: String = ""
@@ -71,20 +71,20 @@ struct StatusView: View {
                     }
                 }
                 
-                /*#-code-walkthrough(FavoritesView.composition)*/
+               
                 HStack {
                     Text("")
-                    /*#-code-walkthrough(FavoritesView.alignment)*/
+                  
                     Spacer()
-                    /*#-code-walkthrough(FavoritesView.alignment)*/
+                   
                 }.padding()
             
                 Divider()                
                     .padding([.top, .leading])
 
-                    /*#-code-walkthrough(FavoritesView.scroll)*/
+                    
                     HStack(spacing: 42) {
-                        /*#-code-walkthrough(FavoritesView.editFood)*/
+                       
                         Text("✈️")
                             .font(.system(size: 48))
                         Text("🚘")
@@ -94,19 +94,14 @@ struct StatusView: View {
                         Text("🚦")
                             .font(.system(size: 56))
                         
-                        /*#-code-walkthrough(FavoritesView.foods)*/
-                        /*#-code-walkthrough(FavoritesView.editFood)*/
+                        
                     }
                 // A horizontal stack of chosen emojis. Are centered within the screen 
                 .padding()
                 
                 Divider()
                 
-                /*#-code-walkthrough(FavoritesView.disclosures)*/
                 
-                /*#-code-walkthrough(FavoritesView.accent)*/
-                
-                /*#-code-walkthrough(FavoritesView.accent)*/
                 
             }
         }
